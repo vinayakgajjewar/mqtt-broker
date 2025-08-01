@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.27)
+project(mqtt-broker)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR})
+file(GLOB SOURCES src/*.c)
+add_executable(mqtt_broker ${SOURCES})
